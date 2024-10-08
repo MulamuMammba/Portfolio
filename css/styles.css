@@ -4,8 +4,8 @@
   --md-sys-color-on-primary: rgb(7 57 16);
   --md-sys-color-primary-container: rgb(34 80 37);
   --md-sys-color-on-primary-container: rgb(187 240 181);
-  --md-sys-color-secondary: rgb(185 204 180);
-  --md-sys-color-on-secondary: rgb(37 52 35);
+  --md-sys-color-secondary: #b9ccb4;
+  --md-sys-color-on-secondary: #253423;
   --md-sys-color-secondary-container: rgb(59, 75, 57);
   --md-sys-color-on-secondary-container: rgb(213 232 207);
   --md-sys-color-tertiary: rgb(161 206 213);
@@ -16,7 +16,7 @@
   --md-sys-color-on-error: rgb(105 0 5);
   --md-sys-color-error-container: rgb(147 0 10);
   --md-sys-color-on-error-container: rgb(255 218 214);
-  --md-sys-color-background: rgb(35, 41, 42);
+  --md-sys-color-background: #23292a;
   --md-sys-color-on-background: rgb(224 228 219);
   --md-sys-color-surface: rgb(16 20 15);
   --md-sys-color-on-surface: rgb(224 228 219);
@@ -56,10 +56,14 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   text-decoration-color: var(--text-color);
-  background-color: var(--md-sys-color-background);
-
 }
-
+body{
+  
+  background-image: url(../images/background.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
 .button {
   display: inline-block;
   padding: 10px 24px;
@@ -157,14 +161,6 @@
 .card-content {
   font-size: 14px;
   color: var(--on-surface-color);
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--md-sys-color-background);
-  color: var(--md-sys-color-background);
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -267,7 +263,8 @@ span {
 
 nav {
   height: 80px;
-  background: var(--md-sys-color-tertiary-container);
+  background-color: transparent;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -350,15 +347,12 @@ nav {
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr); /* This will create three equal columns */
+  grid-gap: 5px; 
   padding: 10px;
-  /* background-color: var(--md-sys-color-secondary-container); */
-  background-image: url(../images/wave.svg);
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat; /* Prevent tiling */
-  background-position: center; /* Center the SVG */
+
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Align items to the start vertically */
 }
 
 .project-a {
@@ -431,13 +425,24 @@ nav {
     width: 100%;
   }
 }
-@media screen and (max-width: 770px) {
-  /* nav {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 10px;
-  } */
+@media screen and (max-width: 1024px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media screen and (max-width: 770px) {
+
+    .project-container {
+      grid-template-columns: 1fr; 
+      grid-gap: 10px; 
+    }
+  
+    .project-img {
+      height: auto; 
+      max-height: 12rem; 
+    }
+  
   .column-left h1 {
     margin-bottom: 0;
     font-size: 2rem;
@@ -447,16 +452,9 @@ nav {
     visibility: hidden;
   }
 
-  .project-container {
-    grid-template-columns: auto;
-  }
 
   .logo {
     padding: 5px;
-  }
-
-  .project-img {
-    height: 12rem;
   }
 
   .projects h1 {
@@ -465,19 +463,25 @@ nav {
 }
 
 .footer {
-  background-color: #282c34; /* Dark background */
-  color: #ffffff; /* White text */
+  background-image: url(../images/blob.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: auto;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
 }
 
 .footer-content {
   margin-bottom: 10px;
+  background-color: transparent;
 }
 
 .socials {
   list-style: none;
   padding: 0;
+  background-color: #61dafb00;
 }
 
 .socials li {
@@ -496,4 +500,5 @@ nav {
 
 .footer-bottom {
   font-size: 14px; /* Smaller text */
+  background-color: #61dafb00;
 }
