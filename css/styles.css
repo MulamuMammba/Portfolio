@@ -6,7 +6,7 @@
   --md-sys-color-on-primary-container: rgb(187 240 181);
   --md-sys-color-secondary: rgb(185 204 180);
   --md-sys-color-on-secondary: rgb(37 52 35);
-  --md-sys-color-secondary-container: rgb(59 75 57);
+  --md-sys-color-secondary-container: rgb(59, 75, 57);
   --md-sys-color-on-secondary-container: rgb(213 232 207);
   --md-sys-color-tertiary: rgb(161 206 213);
   --md-sys-color-on-tertiary: rgb(0 54 60);
@@ -57,6 +57,7 @@
   font-weight: 500;
   text-decoration-color: var(--text-color);
   background-color: var(--md-sys-color-background);
+
 }
 
 .button {
@@ -349,10 +350,15 @@ nav {
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 10px;
-  background-color: var(--md-sys-color-secondary-container);
+  /* background-color: var(--md-sys-color-secondary-container); */
+  background-image: url(../images/wave.svg);
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevent tiling */
+  background-position: center; /* Center the SVG */
 }
 
 .project-a {
@@ -456,4 +462,38 @@ nav {
   .projects h1 {
     visibility: hidden;
   }
+}
+
+.footer {
+  background-color: #282c34; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 10px;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+}
+
+.socials li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.socials a {
+  color: #61dafb; /* Light blue color */
+  text-decoration: none;
+}
+
+.socials a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+  font-size: 14px; /* Smaller text */
 }

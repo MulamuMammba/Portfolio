@@ -11,6 +11,7 @@
 
     <title>Mulamuleli Mammba</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/card.css">
   </head>
 
   <body>
@@ -59,132 +60,105 @@
       </div>
     </section>
 
-       <!-- Skills section -->
-       <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do know?</p>
-            <h6 class="section-title mb-6">Skills & Tools</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Version Control</h6>
-                            <p class="subtitle">Im profient in industry standard Version Control Software such as Git, Github & Azure DevOps.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Data Stores</h6>
-                            <p class="subtitle">I'm very equipped in utilizing and managing diffent types of data store such MySql, Sqlite, Firebase ect.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">OOP</h6>
-                            <p class="subtitle">One of my specialities is oop languages for backend and application development. I'm familiar with Java, C# & Kotlin</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
-                            <h6 class="title">Web Dev</h6>
-                            <p class="subtitle">I know my way around web tool and languages as well such as HTML, CSS, js, php and begineer knowledge on ReactJs.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
-    </section><!-- end of service section -->
-    
-    <section id="projects" class="projects">
-      <h1><strong>My Projects</strong></h1>
 
-      <div class="project-container">
+<section id="skills" class="projects">
+  <h1><strong>My Projects</strong></h1>
+
+ <div class="project-container">
+
+  <!-- Project 1 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/collection-app.svg" alt="Avatar" style="width:400px;height:300px;">
+        <h1>Collection Manager</h1>
+      </div>
+      <div class="flip-card-back">
+        <h1>Collection Manager</h1>
+        <div class="card-content">
+          <h2 class="project-h2">
+            <strong>ArchiveCol</strong>
+          </h2>
+          <p></p>
+          <button class="chip medium round">Kotlin</button>
+          <button class="chip medium round">Firebase</button>
+          <button class="chip medium round">SQLite</button>
+
+          <p style="font-size: medium; text-align: start;">ArchiveCol is an Android app designed for managing collections. 
+            <br>
+            <br>
+            <b>Features</b>
+            <br>📂 Category creation
+            <br>🎯 Goal setting
+            <br>📊 Progress tracking
+            <br>🏆 Achievement system</p>
+
+            <a href="https://github.com/yourusername/ArchiveCol" target="_blank" class="github-link">
+              <button class="chip medium round">View on GitHub</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- Project 2 -->
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/timetable.svg" alt="Avatar" style="width:400px;height:300px;">
+        <h1>Budget Calculator</h1>
+      </div>
+      <div class="flip-card-back">
+        <h1>Budget Calculator</h1>
+        <div class="card-content">
+          <h2 class="project-h2"><strong>Money Calc</strong></h2>
+          <p></p>
+          <button class="chip medium round">C#</button>
+          <button class="chip medium round">Razor ASP.Net</button>
+          <button class="chip medium round">SQL</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Project 3 -->
+
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="images/website.svg" alt="Avatar" style="width:400px;height:300px;">
+        <h1>Modern Note taking App</h1>
+      </div>
+      <div class="flip-card-back">
+        <h1>Modern Note taking App</h1>
         <div
-          class="project-a"
-          href="https://github.com/MulamuMammba/MulamuMammba"
-        >
-          <div class="card-thumbnail">
-            <img src="images/website.svg" alt="portfolio" class="project-img" />
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-h2"><strong>Portfolio Website</strong></h2>
-            <button class="chip medium round">HTML</button>
-            <button class="chip medium round">NeoBrutalismCSS</button>
-            <button class="chip medium round">JS</button>
-          </div>
-        </div>
-
-        <div
-          class="project-a"
-          href="https://github.com/MulamuMammba/Budget-Calculator"
-        >
-          <div class="card-thumbnail">
-            <img
-              src="images/timetable.svg"
-              alt="portfolio"
-              class="project-img"
-            />
-          </div>
-
-          <div class="card-content">
-            <h2 class="project-h2"><strong>Budget Calculator</strong></h2>
-            <p></p>
-            <button class="chip medium round">C#</button>
-            <button class="chip medium round">Razor ASP.Net</button>
-            <button class="chip medium round">SQL</button>
-          </div>
-        </div>
-
-        <div
-          class="project-a"
-          href="https://github.com/MulamuMammba/ArchiveCol"
-        >
-          <div class="card-thumbnail">
-            <img
-              src="images/collection-app.svg"
-              alt="portfolio"
-              class="project-img"
-            />
-          </div>
-          <div class="card-content">
-            <h2 class="project-h2">
-              <strong>Collection Manager</strong>
-            </h2>
-            <p></p>
-            <button class="chip medium round">Kotlin</button>
-            <button class="chip medium round">Firebase</button>
-            <button class="chip medium round">SQLite</button>
-          </div>
-        </div>
-
-        <div class="project-a" href="https://github.com/MulamuMammba/Dreamy-Do">
-          <div class="card-thumbnail">
-            <img src="images/website.svg" alt="portfolio" class="project-img" />
-          </div>
-          <div
             class="card-content"
-            href="https://github.com/MulamuMammba/Dreamy-Do"
           >
-            <h2 class="project-h2"><strong>Modern Note taking</strong></h2>
+            <h2 class="project-h2"><strong>Dreamy-Do</strong></h2>
             <p></p>
             <button class="chip medium round">Kotlin</button>
             <button class="chip medium round">Material Design 3</button>
             <button class="chip medium round">SQLite</button>
+            
           </div>
-        </div>
       </div>
-    </section>
-  </body>
-</html>
+    </div>
+  </div>
+ </div>
+</section>  
+
+<footer class="footer">
+  <div class="footer-content">
+      <h2>Connect with Me</h2>
+      <ul class="socials">
+          <li><a href="https://github.com/MulamuMammba" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+          <li><a href="https://yourwebsite.com" target="_blank">Website</a></li>
+      </ul>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
+  </div>
+</footer>
+
