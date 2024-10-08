@@ -1,0 +1,459 @@
+:root {
+  --md-sys-color-primary: rgb(160 212 155);
+  --md-sys-color-surface-tint: rgb(160 212 155);
+  --md-sys-color-on-primary: rgb(7 57 16);
+  --md-sys-color-primary-container: rgb(34 80 37);
+  --md-sys-color-on-primary-container: rgb(187 240 181);
+  --md-sys-color-secondary: rgb(185 204 180);
+  --md-sys-color-on-secondary: rgb(37 52 35);
+  --md-sys-color-secondary-container: rgb(59 75 57);
+  --md-sys-color-on-secondary-container: rgb(213 232 207);
+  --md-sys-color-tertiary: rgb(161 206 213);
+  --md-sys-color-on-tertiary: rgb(0 54 60);
+  --md-sys-color-tertiary-container: rgb(31 77 83);
+  --md-sys-color-on-tertiary-container: rgb(188 235 241);
+  --md-sys-color-error: rgb(255 180 171);
+  --md-sys-color-on-error: rgb(105 0 5);
+  --md-sys-color-error-container: rgb(147 0 10);
+  --md-sys-color-on-error-container: rgb(255 218 214);
+  --md-sys-color-background: rgb(35, 41, 42);
+  --md-sys-color-on-background: rgb(224 228 219);
+  --md-sys-color-surface: rgb(16 20 15);
+  --md-sys-color-on-surface: rgb(224 228 219);
+  --md-sys-color-surface-variant: rgb(66 73 64);
+  --md-sys-color-on-surface-variant: rgb(194 201 189);
+  --md-sys-color-outline: rgb(140 147 136);
+  --md-sys-color-outline-variant: rgb(66 73 64);
+  --md-sys-color-shadow: rgb(0 0 0);
+  --md-sys-color-scrim: rgb(0 0 0);
+  --md-sys-color-inverse-surface: rgb(224 228 219);
+  --md-sys-color-inverse-on-surface: rgb(45 50 44);
+  --md-sys-color-inverse-primary: rgb(58 105 59);
+  --md-sys-color-primary-fixed: rgb(187 240 181);
+  --md-sys-color-on-primary-fixed: rgb(0 33 5);
+  --md-sys-color-primary-fixed-dim: rgb(160 212 155);
+  --md-sys-color-on-primary-fixed-variant: rgb(34 80 37);
+  --md-sys-color-secondary-fixed: rgb(213 232 207);
+  --md-sys-color-on-secondary-fixed: rgb(16 31 16);
+  --md-sys-color-secondary-fixed-dim: rgb(185 204 180);
+  --md-sys-color-on-secondary-fixed-variant: rgb(59 75 57);
+  --md-sys-color-tertiary-fixed: rgb(188 235 241);
+  --md-sys-color-on-tertiary-fixed: rgb(0 31 35);
+  --md-sys-color-tertiary-fixed-dim: rgb(161 206 213);
+  --md-sys-color-on-tertiary-fixed-variant: rgb(31 77 83);
+  --md-sys-color-surface-dim: rgb(16 20 15);
+  --md-sys-color-surface-bright: rgb(54 58 52);
+  --md-sys-color-surface-container-lowest: rgb(11 15 10);
+  --md-sys-color-surface-container-low: rgb(24 29 23);
+  --md-sys-color-surface-container: rgb(28 33 27);
+  --md-sys-color-surface-container-high: rgb(39 43 37);
+  --md-sys-color-surface-container-highest: rgb(50 54 48);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration-color: var(--text-color);
+  background-color: var(--md-sys-color-background);
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--md-sys-color-inverse-primary);
+  font-size: 32px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.cv {
+  background-color: transparent;
+}
+.button:hover {
+  background-color: var(--md-sys-color-inverse-primary);
+}
+
+.button.outline {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button.outline:hover {
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+}
+
+.chip {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  block-size: 2rem;
+  min-inline-size: 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background-color: var(--md-sys-color-secondary-container);
+  border: 0.0625rem solid var(--outline);
+  color: var(--md-sys-color-on-secondary-container);
+  padding: 0 1rem;
+  margin: 0 0.5rem;
+  text-transform: none;
+  border-radius: 0.5rem;
+  user-select: none;
+  gap: 1rem;
+  line-height: normal;
+}
+.chip.fill:hover {
+  box-shadow: var(--elevate1);
+}
+.chip.medium {
+  block-size: 2.5rem;
+  min-inline-size: 2.5rem;
+}
+.chip.large {
+  block-size: 3rem;
+  min-inline-size: 3rem;
+}
+.chip.fill {
+  background-color: var(--secondary-container) !important;
+  border: none;
+}
+.chip.round.small {
+  border-radius: 1rem;
+}
+.chip.round {
+  border-radius: 1.25rem;
+}
+.chip.round.large {
+  border-radius: 1.5rem;
+}
+
+.card {
+  background-color: var(--surface-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: var(--on-surface-color);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-background);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0, 5);
+  color: var(--md-sys-color-on-background);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h2 {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0, 5);
+  color: var(--md-sys-color-on-background);
+  font-size: 28px;
+  font-weight: 600;
+}
+.me {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+h3 {
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0, 5);
+  color: var(--md-sys-color-on-background);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p,
+a,
+span {
+  font-size: 14px;
+}
+
+.shadow-small {
+  box-shadow: 0px 1px 3px var(--md-sys-color-shadow);
+}
+
+.shadow-medium {
+  box-shadow: 0px 3px 6px var(--md-sys-color-shadow);
+}
+
+.shadow-large {
+  box-shadow: 0px 10px 20px var(--md-sys-color-shadow);
+}
+
+.wrapper {
+  box-sizing: content-box;
+  text-align: center;
+}
+
+.me::before {
+  content: "WRITER";
+  color: var(--md-sys-color-on-background);
+  font-size: larger;
+  animation: animate 5s infinite;
+}
+
+@keyframes animate {
+  20% {
+    content: "TECH GUY";
+  }
+
+  40% {
+    content: "EDITOR";
+  }
+
+  60% {
+    content: "DESIGNER";
+  }
+
+  80% {
+    content: "DEVELOPER";
+  }
+}
+
+@media (max-width: 768px) {
+  .me::before {
+    content: "Man of many talents";
+    color: var(--md-sys-color-on-background);
+    font-size: medium;
+    animation: none;
+    /* animation: animate 5s infinite; */
+  }
+}
+
+nav {
+  height: 80px;
+  background: var(--md-sys-color-tertiary-container);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.logo {
+  color: var(--surface-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 2rem;
+  background-color: transparent;
+}
+
+.nav-list {
+  background-color: transparent;
+  justify-content: flex-end;
+}
+@media (max-width: 770px) {
+  .nav-list {
+    visibility: hidden;
+  }
+}
+
+.hook-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem calc((100vw - 1000px) / 2);
+
+  @media (max-width: 770px) {
+    grid-template-columns: 1fr 0fr;
+  }
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--md-sys-color-on-background);
+  padding: 0rem 2rem;
+}
+
+.column-left h1,
+.projects h1 {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0, 5);
+  color: var(--md-sys-color-on-background);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 200;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    line-height: 1;
+    /* font-weight: 20; */
+  }
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+
+.hook-image {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  background-color: var(--md-sys-color-secondary-container);
+}
+
+.project-a {
+  border-style: double;
+  border-radius: 0.375rem;
+  padding: 20px 0;
+  border-color: var(--md-sys-color-on-secondary-container);
+  overflow: hidden;
+  color: var(--md-sys-color-tertiary-container);
+}
+
+.project-img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  height: 9rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.project-p {
+  display: flex;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-div {
+  padding: 1rem;
+  width: 100%;
+}
+
+.project-h2 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-background);
+}
+.description {
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-background);
+}
+
+.project-span {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  color: var(--md-sys-color-on-background);
+  background-color: var(--md-sys-color-background);
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin: 8px;
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 770px) {
+  /* nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+  } */
+
+  .column-left h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+
+  .column-right {
+    visibility: hidden;
+  }
+
+  .project-container {
+    grid-template-columns: auto;
+  }
+
+  .logo {
+    padding: 5px;
+  }
+
+  .project-img {
+    height: 12rem;
+  }
+
+  .projects h1 {
+    visibility: hidden;
+  }
+}
