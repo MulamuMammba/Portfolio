@@ -19,11 +19,8 @@
   
   .screen {
     position: relative;
-<<<<<<< HEAD
     background: rgba(255, 253, 253, 0.1);
-=======
     background: #3e3e3e;
->>>>>>> 49bb8df9d41a504aa1d046b41f28d127e503a1e5
     border-radius: 15px;
   }
   
