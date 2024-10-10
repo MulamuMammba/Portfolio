@@ -388,7 +388,7 @@ nav {
 .hook-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 3rem calc((100vw - 1000px) / 2);
+  padding: 1rem calc((100vw - 1000px) / 2);
 
   @media (max-width: 770px) {
     grid-template-columns: 1fr;
@@ -418,12 +418,10 @@ nav {
   margin-bottom: 2rem;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-weight: 200;
 
   @media (max-width: 768px) {
     font-size: 0.8rem;
     line-height: 1;
-    /* font-weight: 20; */
   }
 }
 
@@ -444,7 +442,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px; 
-  padding: 60px;
+  padding-top: 20px;
 
   justify-items: center; 
   align-items: center;
