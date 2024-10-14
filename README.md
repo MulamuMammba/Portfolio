@@ -16,3 +16,6 @@ Welcome to my portfolio website! This repository contains the source code for my
 - HTML5
 - CSS3
 - JavaScript
+
+## Inspirations
+- Skills section : idea original en: http://www.alessioatzeni.com/blog/css3-skill-bar-animation/
