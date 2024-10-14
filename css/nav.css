@@ -1,4 +1,3 @@
-/* Navigation */
 nav {
     height: 80px;
     background: var(--transparent-green);
@@ -63,5 +62,4 @@ nav {
       padding: 0 2rem;
     }
   }
-  
   
