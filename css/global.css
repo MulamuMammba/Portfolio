@@ -81,26 +81,42 @@ span {
   content: "WRITER";
   color: var(--md-sys-color-on-background);
   font-size: larger;
-  animation: animate 5s infinite;
+  animation: animate 8s infinite;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.842), 0 0 10px rgba(127, 224, 165, 0.37);
+
+  transition: text-shadow 0.3s ease;
 }
 
 @keyframes animate {
-  20% {
-    content: "TECH GUY";
+  0% {
+    content: "STORY WRITER";
   }
-
-  40% {
-    content: "EDITOR";
+  12.5% {
+    content: "WEB DEVELOPER";
   }
-
-  60% {
-    content: "DESIGNER";
+  25% {
+    content: "CONTENT CURATOR";
   }
-
-  80% {
-    content: "DEVELOPER";
+  37.5% {
+    content: "GRAPHIC DESIGNER";
+  }
+  50% {
+    content: "SOFTWARE DEV";
+  }
+  62.5% {
+    content: "TEAM PLAYER";
+  }
+  75% {
+    content: "DATA ANALYST";
+  }
+  87.5% {
+    content: "DIGITAL CRAFTMAN";
+  }
+  100% {
+    content: "STORY WRITER"; 
   }
 }
+
 
 @media (max-width: 768px) {
   .me::before {
@@ -114,71 +130,6 @@ span {
 
 
 
-/* Navigation */
-nav {
-  height: 80px;
-  background: var(--transparent-green);
-  box-shadow: 0 8px 32px 0 rgba(31, 131, 135, 0.37);
-  backdrop-filter: blur(0.5px);
-  -webkit-backdrop-filter: blur(0.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0rem calc((100vw - 1300px) / 2);
-}
-
-.logo {
-  color: var(--surface-color);
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-style: italic;
-  padding: 0 2rem;
-  background-color: transparent;
-}
-
-.nav-list {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-list a {
-  color: white;
-  text-decoration: none;
-}
-
-
-@media (max-width: 770px) {
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    background-color: rgba(7, 1, 1, 0.705);
-    box-shadow: 0 8px 32px 0 rgba(31, 131, 135, 0.37);
-    backdrop-filter: blur(0.5px);
-    -webkit-backdrop-filter: blur(0.5px);
-    border-radius: 0 0 10px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 1rem;
-  }
-
-  .nav-list.active {
-    display: flex;
-  }
-
-  .menu-btn {
-    display: block;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: white;
-    padding: 0 2rem;
-  }
-}
 
 
 .hook-container {
