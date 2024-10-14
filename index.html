@@ -11,9 +11,11 @@
   <link rel="icon" type="images/x-icon" href="/images/favicon.ico">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/skills.css">
   <link rel="stylesheet" href="css/projects.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,11 +25,11 @@
 
 <body>
   <nav>
-    <div class="logo">Mulamu</div>
+    <div class="logo">Mulamuleli Mammba</div>
     <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
     <div class="nav-list">
       <a class="button outline" href="about-me.html">About Me</a>
-      <a class="button outline" href="projects/project1.html">Projects</a>
+      <a class="button outline" href="#projects">Projects</a>
       <a class="button outline" href="#footer">Contact</a>
     </div>
   </nav>
@@ -50,13 +52,15 @@
             Are you prepared to meet a potential new software developer who
             will <b>undoubtedly</b> become a valuable asset to your company?
             Look no further, as I possess exceptional skills primarily in
-            <b style="font-weight: bold; color: #009fb7">Mobile</b> and
-            <b style="font-weight: bold; color: #009fb7">Web development</b>,
+            <b style="font-weight: bold; text-shadow: 0 0 5px #ffffff00, 0 0 10px #7fe0a55e; color: #85b498;">MOBILE</b> and
+            <b style="font-weight: bold; text-shadow: 0 0 5px #ffffff00, 0 0 10px #7fe0a55e; color: #85b498;">WEB DEVELOPMENT</b>,
             with expertise in both front-end and back-end technologies.
+          
+            <a href="about-me.html">
+              <button class="glass-button" role="button">Know More</button>
+            </a>
           </p>
-          <a href="about-me.html">
-            <button class="glass-button" role="button">Know More</button>
-          </a>
+          
         </div>
       </div>
       <div class="column-right" style="padding-top: 60px;">
@@ -154,7 +158,7 @@
     </div>
 
 
-    <div id="Projects" class="timelines" style="padding-top: 50px;">
+    <div id="projects" class="timelines" style="padding-top: 50px;">
       <h2>Projects</h2>
     </div>
     <div class="project-container">
@@ -262,8 +266,48 @@
       </div>
     </div>
     <div style="padding: 50px 0; text-align: center;">
-      <a href="projects/project1.html" style="font-size: 20px; text-decoration: none; color: #ffffff;">See More Projects <i class="fa-solid fa-angles-right"></i></a></a>
+      <a href="https://github.com/MulamuMammba" target="_blank" style="font-size: 20px; text-decoration: none; color: #ffffff;">See More Projects <i class="fa-solid fa-angles-right"></i></a></a>
     </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-container">
+        <div class="timelines">
+          <h2 style="padding-top: 20px;">Skills</h2>
+          <div class="container">
+            <div class="col">
+              <h2 class="titles">Languages</h2>
+              <ul class="skill">
+                <li><span class="blueline html"></span><em>HTML</em></li>
+                <li><span class="blueline css"></span><em>CSS</em></li>
+                <li><span class="blueline java"></span><em>JAVA</em></li>
+                <li><span class="blueline javascript"></span><em>Javascript</em></li> 
+                <li><span class="blueline csharp"></span><em>C#</em></li>
+              </ul>
+            </div>
+              <div class="col">
+                <h2 class="titles">Tools</h2>
+              <ul class="skill">
+                <li><span class="greenline github"></span><em>Github</em></li>
+                <li><span class="greenline azureDev"></span><em>Azure DevOps</em></li>
+                <li><span class="greenline sql"></span><em>SQL</em></li>
+                <li><span class="greenline git"></span><em>Git</em></li>
+              </ul>
+            </div>
+              <div class="col">
+                <h2 class="titles">Programmes</h2>
+              <ul class="skill">
+                <li><span class="redline vscode"></span><em>Visual Studio Code</em></li>
+                <li><span class="redline android-studio"></span><em>Android Studio</em></li>
+                <li><span class="redline ecclipse"></span><em>Ecclipse</em></li>
+                <li><span class="redline vs"></span><em>Visual Studio</em></li>
+              </ul>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+
     </section>
 
     <!-- Contact Me -->
