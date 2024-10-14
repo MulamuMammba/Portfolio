@@ -1,3 +1,28 @@
+.card {
+  background-color: var(--surface-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-content {
+  font-size: 14px;
+  color: var(--on-surface-color);
+}
+
+
 .flip-card {
   background-color: transparent;
   width: 400px;
@@ -44,9 +69,9 @@
 }
 
 .flip-card-front {
-  background: linear-gradient(135deg, #83a4d4, #b6fbff);
+  background: linear-gradient(135deg, #8caa93, #24352b);
   color: black;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  box-shadow: 0 8px 32px 0 rgba(127, 224, 165, 0.37);
   backdrop-filter: blur(3px);
   -webkit-backdrop-filter: blur(3px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -55,9 +80,9 @@
 }
 
 .flip-card-back {
-  background: rgba(255, 255, 255, 0.363);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(1.5px);
+  background: linear-gradient(135deg, #8caa93, #24352b);
+  box-shadow: 0 8px 32px 0 rgba(127, 224, 165, 0.37);
+  backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
