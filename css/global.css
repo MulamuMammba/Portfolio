@@ -7,11 +7,7 @@
   text-decoration-color: var(--text-color);
 }
 body{
-  
-  background-image: url(../images/background.svg);
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-position: center;
+  background: #121212;
 }
 
 h1 {
@@ -136,8 +132,8 @@ span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem calc((100vw - 1000px) / 2);
-  max-height: 50vh;
-  overflow: hidden;
+  max-height: 90vh;
+  overflow: visible;
 
   @media (max-width: 770px) {
     grid-template-columns: 1fr;

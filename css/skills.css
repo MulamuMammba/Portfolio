@@ -9,29 +9,6 @@
   margin: 4rem;
 }
 
-* {margin: 0; padding: 0; outline: none;}
-
-body {
-  background: #121212;
-  font: 12px normal Arial;
-  font-family: "Raleway",Arial,Helvetica,sans-serif;
-  color:#fff;
-}
-
-h2.plataformas {
-  border: 1px solid #9ACD32;  
-  box-shadow: 0px 0px 50px -8px #9ACD32;
-  color: #9ACD32;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #9ACD32, 0 0 20px #9ACD32;
-}
-
-h2.programas {
-  border: 1px solid #FF4500;  
-  box-shadow: 0px 0px 50px -8px #FF4500;
-  color: #FF4500;
-  text-shadow: 1px 1px 5px #000, 0 0 10px #FF4500, 0 0 20px #FF4500;
-}
- 
 .container {
   width: 90%;
   padding:5%;
@@ -99,41 +76,40 @@ h2.programas {
 .titles     { opacity:1;  animation:titles 5s ease-out;     }
 
 
-.html        { width:90%;  animation:html 2s ease-out;       }
-.css         { width:95%;  animation:css 2s ease-out;        }
-.java         { width:70%;  animation:java 2s ease-out;        }
-.javascript  { width:50%;  animation:javascript 2s ease-out; }
-.csharp       { width:30%;  animation:csharpery 2s ease-out;     }
+.html        { width:78%;  animation:html 2s ease-out;       }
+.css         { width:90%;  animation:css 2s ease-out;        }
+.java         { width:75%;  animation:java 2s ease-out;        }
+.javascript  { width:60%;  animation:javascript 2s ease-out; }
+.csharp       { width:80%;  animation:csharp 2s ease-out;     }
 
-.github   { width:80%;  animation:github 2s ease-out;  }
+.github   { width:95%;  animation:github 2s ease-out;  }
 .azureDev  { width:60%;  animation:azureDev 2s ease-out; }
-.sql      { width:40%;  animation:sql 2s ease-out;     }
-.git     { width:70%;  animation:git 2s ease-out;    }
-.tridion      { width:60%;  animation:tridion 2s ease-out;     }
+.sql      { width:70%;  animation:sql 2s ease-out;     }
+.git     { width:90%;  animation:git 2s ease-out;    }
 
 .vscode { width:90%;  animation:vscode 2s ease-out;}
-.android-studio { width:30%;  animation:android-studio 2s ease-out;}
+.android-studio { width:90%;  animation:android-studio 2s ease-out;}
 .ecclipse   { width:70%;  animation:ecclipse 2s ease-out;  }
-.vs    { width:50%;  animation:vs 2s ease-out;   }
+.vs    { width:67%;  animation:vs 2s ease-out;   }
 
 
 @keyframes titles      { 0% { opacity:0; } 100% { opacity:1; }  }
 
-@keyframes html        { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes css         { 0% { width:0px; } 100% { width:95%; }  }
-@keyframes java         { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes javascript  { 0% { width:0px; } 100% { width:50%; }  }
-@keyframes csharp     { 0% { width:0px; } 100% { width:30%; }  }
+@keyframes html        { 0% { width:0px; } 100% { width:78%; }  }
+@keyframes css         { 0% { width:0px; } 100% { width:90%; }  }
+@keyframes java         { 0% { width:0px; } 100% { width:75%; }  }
+@keyframes javascript  { 0% { width:0px; } 100% { width:60%; }  }
+@keyframes csharp     { 0% { width:0px; } 100% { width:80%; }  }
 
-@keyframes github   { 0% { width:0px; } 100% { width:80%; }  }
+@keyframes github   { 0% { width:0px; } 100% { width:95%; }  }
 @keyframes azureDev  { 0% { width:0px; } 100% { width:60%; }  }
-@keyframes sql      { 0% { width:0px; } 100% { width:40%; }  }
-@keyframes git     { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes sql      { 0% { width:0px; } 100% { width:70%; }  }
+@keyframes git     { 0% { width:0px; } 100% { width:90%; }  }
 
 @keyframes vscode { 0% { width:0px; } 100% { width:90%; }  }
-@keyframes illusandroid-studiotrator { 0% { width:0px; } 100% { width:30%; }  }
+@keyframes android-studio { 0% { width:0px; } 100% { width:90%; }  }
 @keyframes ecclipse   { 0% { width:0px; } 100% { width:70%; }  }
-@keyframes vs    { 0% { width:0px; } 100% { width:50%; }  }
+@keyframes vs    { 0% { width:0px; } 100% { width:67%; }  }
 
 @media (max-width: 1200px){
   h2 {font-size:2.2em;}
