@@ -15,9 +15,8 @@ nav {
   
   .logo {
     color: var(--surface-color);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    font-style: italic;
     padding: 0 2rem;
     background-color: transparent;
   }
