@@ -26,11 +26,11 @@ Each project lists the tools and technologies used, along with Hlanganani’s ro
 # Contact
 A contact form allows users to share their views.
 
-#Footer
+# Footer
 Social media icons with links to profiles such as LinkedIn, GitHub, Website, etc.
 A copyright notice for the year 2024.
 
-#How to Run
+# How to Run
 Clone or download the repository.
 Open index.html in a web browser to view the portfolio.
 The form in the Contact section submits to formspree API for message handling.
