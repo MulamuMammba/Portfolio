@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
+    /* padding: 0rem calc((100vw - 1300px) / 2);    */
   }
   
   .logo {
@@ -30,7 +30,10 @@ nav {
     color: white;
     text-decoration: none;
   }
-  
+
+  .menu-btn{
+    visibility: hidden;
+  }
   
   @media (max-width: 770px) {
     .nav-list {
@@ -48,12 +51,19 @@ nav {
       border: 1px solid rgba(255, 255, 255, 0.18);
       padding: 1rem;
     }
-  
+    
+    .name-holder{
+      visibility: hidden;
+      padding-bottom: 50px;
+    }
+    
     .nav-list.active {
       display: flex;
     }
-  
+    
     .menu-btn {
+  
+      visibility: visible;
       display: block;
       cursor: pointer;
       font-size: 1.5rem;

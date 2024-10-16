@@ -133,10 +133,6 @@ span {
   }
 }
 
-
-
-
-
 .hook-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -241,7 +237,6 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px; 
-  padding-top: 20px;
 
   justify-items: center; 
   align-items: center;
@@ -361,17 +356,17 @@ span {
 
 .tools-icons {
   display: flex;
-  gap: 10px; /* Adjust spacing as needed */
+  gap: 10px; 
 }
 
 .tools-icons i {
-  font-size: 40px; /* Set the size of the icons */
-  color: #f0f0f0; /* Change color as needed */
-  transition: transform 0.3s; /* Add transition for hover effect */
+  font-size: 40px;
+  color: #f0f0f0; 
+  transition: transform 0.3s;
 }
 
 .tools-icons i:hover {
-  transform: scale(1.1); /* Slightly enlarge icon on hover */
+  transform: scale(1.1);
 }
 
 
@@ -409,15 +404,16 @@ span {
 }
 
 .socials a {
-  color: #61dafb; /* Light blue color */
+  color: #61dafb;
   text-decoration: none;
 }
 
 .socials a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 .footer-bottom {
-  font-size: 14px; /* Smaller text */
+  font-size: 14px;
   background-color: #61dafb00;
 }
+
