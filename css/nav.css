@@ -57,11 +57,14 @@ nav {
       padding-bottom: 50px;
     }
     
+    
     .nav-list.active {
       display: flex;
     }
     
+    
     .menu-btn {
+  
   
       visibility: visible;
       display: block;
