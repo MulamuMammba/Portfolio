@@ -333,6 +333,10 @@ span {
   .button {
     width: 100%;
   }
+
+  .know-more{
+  visibility: hidden;
+  }
 }
 
 @media screen and (max-width: 1500px) {
@@ -438,3 +442,4 @@ span {
   font-size: 14px;
   background-color: #61dafb00;
 }
+
