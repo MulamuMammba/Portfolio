@@ -8,12 +8,14 @@ Projects: A display of key projects completed, with links to GitHub repositories
 Timeline: Which displays my journey so far.
 Skills: Showing the tools and programming languages I know and used.
 Contact: A form and social media links to reach out.
+ChatBot: An ai powered chatbot
 
 # Technologies Used
 HTML5: Structure of the website.
 CSS3: Styling of the site, including responsiveness and layouts.
 JavaScript: Enhancements and dynamic elements.
 Font Awesome: Icons for social media and other links.
+Tawk to: Ai chatbot platform
 
 # Projects
 Three key projects are highlighted for this section:
@@ -22,6 +24,9 @@ ArchiveCol: A collection management mobile application project.
 EagleEyed: A bird watching app with navigation and social features.
 Disaster Management System: A web application which allows disasters to be reported and managed as well as the donation.
 Each project lists the tools and technologies used, along with Hlanganani’s role in the development.
+
+# Chatbot
+A chatbot for givign more information and a more communicative way to interact with the portfolio
 
 # Contact
 A contact form allows users to share their views.
