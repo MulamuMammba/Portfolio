@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Options for Android Development</title>
+    <link rel="icon" type="images/x-icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/blog-post.css">
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/6718a1fa2480f5b4f59207bd/1ias3hff1';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">Mulamuleli Mammba</div>
+      <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+      <div class="nav-list">
+        <a class="button outline" href="../index.html">Home</a>
+        <a class="button outline" href="../about-me.html">About</a>
+        <a class="button outline" href="../index.html#projects">Projects</a>
+        <a class="button outline" href="../index.html#footer">Contact</a>
+      </div>
+    </nav>
+    <script>
+      function toggleMenu() {
+        document.querySelector('.nav-list').classList.toggle('active');
+      }
+    </script>
+
+
+<div class="blog backglow">
+  <a class="reference" href="blog.html" style="color: aliceblue;"><i class="fa-solid fa-backward" ></i> Back to blogs</a>
+  <br>
+  <h1>Database Options for Android Development</h1>
+  <p><em>by Mulamuleli Mammba</em></p>
+
+    <br>
+    <h2>Getting Started with Databases in Android</h2>
+    <p>When developing Android apps, one of the most crucial decisions you’ll make is choosing the right database solution. Each database option—SQLite, Firebase, or Room—comes with its own set of strengths and trade-offs. Let’s explore each and understand which might work best for your project.</p>
+
+    <br>
+    <h2>SQLite: The Tried-and-True Local Database</h2>
+    <p>
+        SQLite is often the first choice for developers looking to store data locally. Lightweight and efficient, it’s bundled with Android and doesn't require a server setup. However, managing large, complex data structures can be challenging with SQLite, as it requires handling SQL commands directly.
+    </p>
+    <br>
+
+    <h2>Room Database: A Modern Layer Over SQLite</h2>
+    <p>
+        Room is a library that abstracts SQLite to make local data storage simpler and more efficient. With Room, you don’t have to deal with raw SQL; instead, you define data classes as entities and use annotations to build your database. Room takes care of schema migrations, type safety, and offers LiveData support, making it a powerful tool for apps that need a local database.
+    </p>
+    <br>
+
+    <h2>Firebase: Real-Time, Cloud-Backed Database</h2>
+    <p>
+        Firebase Realtime Database is a cloud-hosted solution provided by Google, making it ideal for apps that require real-time data syncing or collaborative features. Firebase removes the need for a backend server, as it manages storage, authentication, and even scaling for you. The drawback is that it requires internet connectivity, but with Firebase’s offline support, it can be configured to handle limited data when offline.
+    </p>
+    <br>
+
+    <h2>Choosing the Right Database for Your App</h2>
+    <p>
+        Your choice of database should depend on your app’s needs. SQLite works well for simple, local storage needs, while Room provides more structure and ease for larger local databases. Firebase is perfect for apps needing real-time features or cloud storage without the need to set up and maintain a server.
+    </p>
+
+    <p>Whichever database you choose, remember to structure your data carefully, keep an eye on performance, and consider the app’s scalability. Happy coding!</p>
+
+</div>
+</body>
+</html>

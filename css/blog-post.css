@@ -1,0 +1,25 @@
+.blog {
+    line-height: 1.6;
+    margin: 50px;
+    padding: 60px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 10px;
+    color: #555;
+}
+
+p {
+    color: #979797;
+    font-size: large;
+}
+
+.reference {
+    text-decoration: dotted;
+    color: aliceblue;
+
+}
