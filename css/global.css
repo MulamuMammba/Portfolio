@@ -10,7 +10,10 @@
 
 body {
   background: #121212;
+	background-color: #1d2123;
+	font-family: "Inter", sans-serif;
 }
+
 
 .backglow {
   box-shadow: 0 8px 32px 0 rgba(31, 131, 135, 0.37);
