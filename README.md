@@ -1,66 +1,70 @@
-# Project Overview
+# Personal Portfolio
 
-This project is a Software Developer Portfolio website for and made by Mulamuleli Mammba. The site showcases my skills, projects, and experience, serving as a platform to present my work to potential employers and collaborators.
+![websute](https://github.com/user-attachments/assets/a59b8867-fcdb-421c-b1be-9e94c2cd0c03)
 
-# The website is divided into sections:
 
-About Me: Personal background and career journey.
-Projects: A display of key projects completed, with links to GitHub repositories.
-Timeline: Which displays my journey so far.
-Skills: Showing the tools and programming languages I know and used.
-Contact: A form and social media links to reach out.
-ChatBot: An ai powered chatbot
+This project is a Software Developer Portfolio website created by Mulamuleli Mammba. The site showcases my skills, projects, and experience, serving as a platform to present my work to potential employers and collaborators.
+
+# Website Sections
+
+- About Me: Personal background and career journey
+- Projects: Display of key projects completed, with links to GitHub repositories
+- Timeline: Visualization of my professional journey
+- Skills: Overview of tools and programming languages I've mastered
+- Contact: Form and social media links for easy communication
+- Chatbot: AI-powered assistant for interactive engagement
 
 # Technologies Used
 
-HTML5: Structure of the website.
-CSS3: Styling of the site, including responsiveness and layouts.
-JavaScript: Enhancements and dynamic elements.
-Font Awesome: Icons for social media and other links.
-Tawk to: Ai chatbot platform
+- HTML5: Website structure
+- CSS3: Styling and responsive layouts
+- JavaScript: Dynamic elements and enhancements
+- Font Awesome: Icons for social media and other links
+- [Tawk.to](http://Tawk.to): AI chatbot platform
 
-# Projects
+# Featured Projects
 
-Three key projects are highlighted for this section:
+Three key projects are highlighted:
 
-ArchiveCol: A collection management mobile application project.
-EagleEyed: A bird watching app with navigation and social features.
-Disaster Management System: A web application which allows disasters to be reported and managed as well as the donation.
-Each project lists the tools and technologies used, along with Hlanganani’s role in the development.
+1. ArchiveCol: A collection management mobile application
+2. EagleEyed: A bird-watching app with navigation and social features
+3. Disaster Management System: A web application for reporting, managing, and donating to disaster relief efforts
+
+Each project includes details on tools, technologies, and my role in development.
 
 # Blogs
 
-A blogs section where I can provide incite and write about my own experiences with technologies and projects I use.
+A section where I share insights and experiences with various technologies and projects.
 
 # Chatbot
 
-A chatbot for giving more information and a more communicative way to interact with the portfolio
+An AI-powered chatbot providing additional information and a more interactive way to explore the portfolio.
 
 # Contact
 
-A contact form allows users to share their views.
+A user-friendly form for visitors to share their thoughts and inquiries.
 
 # Footer
 
-Social media icons with links to profiles such as LinkedIn, GitHub, Website, etc.
-A copyright notice for the year 2024.
+• Social media icons linking to profiles (LinkedIn, GitHub, personal website, etc.)
+• Copyright notice for 2024
 
 # How to Run
 
-Clone or download the repository.
-Open index.html in a web browser to view the portfolio.
-The form in the Contact section submits to formspree API for message handling.
+1. Clone or download the repository
+2. Open index.html in a web browser to view the portfolio
+3. The Contact form uses Formspree API for message handling
 
-# Live version
+# Live Version
 
-The live version of the website can be accessed on : https://mulamumammba.github.io/Portfolio/
+Access the live website at: https://mulamumammba.github.io/Portfolio/
 
 # Dependencies
 
-Font Awesome (included via CDN): Provides icons for social links.
-Google fonts for the websites font
-GitHub repository links for each project are included for reference.
+• Font Awesome (via CDN): Provides icons for social links
+• Google Fonts: Supplies the website's typography
+• GitHub: Hosts repository links for each featured project
 
 ## Inspirations
 
-- Skills section : idea original en: http://www.alessioatzeni.com/blog/css3-skill-bar-animation/
+- Skills section inspired by: http://www.alessioatzeni.com/blog/css3-skill-bar-animation/
