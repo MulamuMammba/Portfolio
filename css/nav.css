@@ -112,8 +112,8 @@ nav.scrolled {
   display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 30px;
+  width: 40px; /* Increased size */
+  height: 40px; /* Increased size */
   background: transparent;
   border: none;
   cursor: pointer;
@@ -134,15 +134,21 @@ nav.scrolled {
   background: var(--md-sys-color-primary);
 }
 
-.menu-btn.active span:nth-child(1) {
+/* Menu Toggle Styling */
+.menu-toggle {
+  display: none;
+}
+
+/* Styling for when the menu is open */
+#menu-toggle:checked + .menu-btn span:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
 }
 
-.menu-btn.active span:nth-child(2) {
+#menu-toggle:checked + .menu-btn span:nth-child(2) {
   opacity: 0;
 }
 
-.menu-btn.active span:nth-child(3) {
+#menu-toggle:checked + .menu-btn span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
@@ -170,7 +176,7 @@ nav.scrolled {
     transition: all 0.3s ease;
   }
 
-  .nav-list.active {
+  #menu-toggle:checked ~ .nav-list {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;

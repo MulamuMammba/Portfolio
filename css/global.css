@@ -14,8 +14,8 @@ html {
 
 body {
   background: #121212;
-	background-color: #1d2123;
-	font-family: "Inter", sans-serif;
+  background-color: #1d2123;
+  font-family: "Inter", sans-serif;
 }
 
 .backglow {
@@ -122,3 +122,73 @@ span {
   }
 }
 
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+  gap: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1d2123;
+  color: var(--md-sys-color-on-background);
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.footer-info {
+  text-align: left;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #8892b0;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: var(--md-sys-color-primary);
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #8892b0;
+}

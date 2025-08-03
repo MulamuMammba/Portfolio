@@ -41,11 +41,12 @@
       <a href="blog/blog.html">Blog</a>
       <a href="#contact">Contact</a>
     </div>
-    <button class="menu-btn" onclick="toggleMenu()">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
       <span></span>
       <span></span>
       <span></span>
-    </button>
+    </label>
   </nav>
 
   <!-- Hero Section -->
@@ -53,15 +54,15 @@
     <div class="hero-container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-title">
-            I'm Mulamuleli, I'm a <br />
+          <h1 class="hero-title fade-in">
+            I'm Mulamuleli, <br>I'm a <br />
             <span class="hero-subtitle"></span>
           </h1>
-          <p class="hero-description">
-            Java Developer at FNB, specializing in mobile and web development. 
+          <p class="hero-description fade-in">
+            Java Developer specializing in mobile and web development.
             Passionate about creating impactful software solutions that drive business value.
           </p>
-          <div class="hero-actions">
+          <div class="hero-actions fade-in">
             <a href="docs/Mulamuleli Mammba CV Software Developer.pdf" download class="hero-btn primary">
               <i class="fa-solid fa-download"></i> Download CV
             </a>
@@ -82,10 +83,10 @@
         <h2>Featured Projects</h2>
         <p>Showcasing my latest work in mobile and web development</p>
       </div>
-      
+
       <div class="projects-grid">
         <!-- Project 1 -->
-        <div class="project-card">
+        <div class="project-card custom-project-card">
           <div class="project-image">
             <img src="images/Collection.svg" alt="Collection Manager" />
           </div>
@@ -99,13 +100,12 @@
             </div>
             <div class="project-actions">
               <a href="projects/project-1.html" class="project-btn primary">View Details</a>
-              <a href="https://github.com/MulamuMammba" target="_blank" class="project-btn secondary">GitHub</a>
             </div>
           </div>
         </div>
 
         <!-- Project 2 -->
-        <div class="project-card">
+        <div class="project-card custom-project-card">
           <div class="project-image">
             <img src="images/nature.svg" alt="Bird Watching App" />
           </div>
@@ -119,13 +119,12 @@
             </div>
             <div class="project-actions">
               <a href="projects/project-2.html" class="project-btn primary">View Details</a>
-              <a href="https://github.com/MulamuMammba" target="_blank" class="project-btn secondary">GitHub</a>
             </div>
           </div>
         </div>
 
         <!-- Project 3 -->
-        <div class="project-card">
+        <div class="project-card custom-project-card">
           <div class="project-image">
             <img src="images/website.svg" alt="Disaster Manager System" />
           </div>
@@ -139,7 +138,6 @@
             </div>
             <div class="project-actions">
               <a href="projects/project-3.html" class="project-btn primary">View Details</a>
-              <a href="https://github.com/MulamuMammba" target="_blank" class="project-btn secondary">GitHub</a>
             </div>
           </div>
         </div>
@@ -156,11 +154,6 @@
   <!-- Contact Section -->
   <section id="contact" class="contact">
     <div class="contact-container">
-      <div class="section-header">
-        <h2>Get In Touch</h2>
-        <p>Let's discuss how I can contribute to your team</p>
-      </div>
-      
       <div class="contact-content">
         <div class="contact-info">
           <div class="contact-item">
@@ -181,7 +174,7 @@
             <i class="fas fa-briefcase"></i>
             <div>
               <h4>Current Role</h4>
-              <p>Java Developer at FNB</p>
+              <p>Java Developer</p>
             </div>
           </div>
         </div>
@@ -213,20 +206,20 @@
         <h3>Mulamuleli Mammba</h3>
         <p>Java Developer passionate about creating impactful software solutions</p>
       </div>
-      
+
       <div class="footer-social">
-        <a href="https://github.com/MulamuMammba" target="_blank" aria-label="GitHub">
+        <a href="https://github.com/MulamuMammba" target="_blank" aria-label="GitHub Profile">
           <i class="fab fa-github"></i>
         </a>
-        <a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank" aria-label="LinkedIn Profile">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter Profile">
           <i class="fab fa-twitter"></i>
         </a>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
       <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
     </div>
@@ -236,77 +229,6 @@
   <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
     <i class="fas fa-chevron-up"></i>
   </button>
-
-  <script>
-    // Navigation functionality
-    function toggleMenu() {
-      const navList = document.querySelector('.nav-list');
-      const menuBtn = document.querySelector('.menu-btn');
-      navList.classList.toggle('active');
-      menuBtn.classList.toggle('active');
-    }
-
-    // Close mobile menu when clicking on a link
-    document.querySelectorAll('.nav-list a').forEach(link => {
-      link.addEventListener('click', () => {
-        const navList = document.querySelector('.nav-list');
-        const menuBtn = document.querySelector('.menu-btn');
-        navList.classList.remove('active');
-        menuBtn.classList.remove('active');
-      });
-    });
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', function() {
-      const navbar = document.getElementById('navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-
-    // Active navigation highlighting
-    function setActiveNav() {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-list a[href^="#"]');
-      
-      let current = '';
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= (sectionTop - 200)) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
-    }
-
-    window.addEventListener('scroll', setActiveNav);
-
-    // Back to top functionality
-    window.onscroll = function() {
-      const backToTopBtn = document.getElementById("backToTop");
-      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-        backToTopBtn.style.display = "block";
-      } else {
-        backToTopBtn.style.display = "none";
-      }
-    };
-
-    function scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  </script>
 
 </body>
 
