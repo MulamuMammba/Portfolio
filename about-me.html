@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/minimal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <script type="text/javascript">
@@ -24,190 +25,239 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-  <!--End of Tawk.to Script-->
 </head>
 
 <body>
-  <nav>
-    <a href="index.html" style="color: white;">
-      <div class="logo">Mulamuleli Mammba</div>
-    </a>
-
-    <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+  <nav id="navbar">
+    <a href="index.html" class="logo">Mulamuleli Mammba</a>
     <div class="nav-list">
-      <a class="button outline" href="index.html">Home</a>
-      <a class="button outline" href="index.html#projects">Projects</a>
-      <a class="button outline" href="blog/blog.html">Blog</a>
-      <a class="button outline" href="index.html#footer">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="blog/blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
     </div>
+    <button class="menu-btn" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-list').classList.toggle('active');
-    }
-  </script>
 
-
-  <section id="hook" class="hook">
-    <div class="hook-container">
-      <div class="column-left backglow name-holder">
-        <div class="wrapper">
-          <h1 style="  text-shadow: 0 0 5px rgba(255, 255, 255, 0.562), 0 0 10px rgba(127, 224, 165, 0.37);">Mulamuleli
-            Mammba</h1>
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="about-hero-container">
+      <div class="about-hero-content">
+        <div class="about-hero-text">
+          <h1>About Me</h1>
+          <p class="about-subtitle">Java Developer at FNB, passionate about creating impactful software solutions</p>
+          <div class="about-actions">
+            <a href="docs/Mulamuleli Mammba CV Software Developer.pdf" download class="about-btn primary">
+              <i class="fa-solid fa-download"></i> Download CV
+            </a>
+            <a href="index.html#contact" class="about-btn secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="about-hero-image">
+          <img src="images/mulamuleli.svg" alt="Mulamuleli Mammba" />
         </div>
       </div>
-      <div class="column-right" style="padding-top: 30px;">
-        <img src="images/mulamuleli.svg " alt="illustration" class="hook-image" />
-        <a href="docs/Mulamuleli Mammba CV Software Developer.pdf" download>
-          <button class="glass-button" role="button"><i class="fa-solid fa-download"> My CV</i></button>
+    </div>
+  </section>
+
+  <!-- Background Section -->
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/thohoyandou.svg" alt="Ha-Makhuvha, Limpopo" />
+        </div>
+        <div class="about-text">
+          <h2>From Ha-Makhuvha to Success</h2>
+          <p>Growing up in Ha-Makhuvha, Limpopo, was a unique experience shaped by the beauty of rural life and the strength of community. I attended Tshivhase Secondary School, where I cultivated my passion for learning and ultimately matriculated.</p>
+          <p>This foundation paved the way for my journey to Rosebank College, where I earned my IIE diploma. Each step of this journey has been instrumental in shaping who I am today - a dedicated software developer committed to creating meaningful solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Passion Section -->
+  <section class="about-section alt-bg">
+    <div class="about-container">
+      <div class="about-content reverse">
+        <div class="about-text">
+          <h2>Pursuing My Passion for Software Development</h2>
+          <p>My love for software development and technology keeps me motivated on my journey to becoming a tech lead one day. The challenges and innovations in this field inspire my creativity and drive me to push the boundaries of what's possible in tech.</p>
+          <p>Currently working as a Java Developer at FNB on the FXPH App team, I'm gaining valuable experience in enterprise-level financial applications while contributing to meaningful projects that impact millions of users.</p>
+        </div>
+        <div class="about-image">
+          <img src="images/laptop.svg" alt="Software Development" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <div class="timeline-container">
+      <div class="section-header">
+        <h2>My Journey</h2>
+        <p>A timeline of my academic and professional milestones</p>
+      </div>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">April 2025</div>
+            <h3>Java Developer at FNB</h3>
+            <p>Started my professional journey as a Java Developer at FNB, working on the FXPH App team, contributing to enterprise-level financial applications and gaining valuable industry experience.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">September 2024</div>
+            <h3>CAPACITI Technical Training Academy</h3>
+            <p>Embarked on a transformative journey with CAPACITI Technical Training Academy in collaboration with FNB, sharpening my technical skills and expanding my career horizons.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">May 2024</div>
+            <h3>Graduated from Rosebank College</h3>
+            <p>Proudly graduated from Rosebank College with a Diploma in Information Technology (Software Development), marking a pivotal step toward a career in tech.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">March 2021</div>
+            <h3>Started at Rosebank College</h3>
+            <p>Began an exciting academic adventure at Rosebank College, diving deep into the world of software development and technological innovation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">December 2019</div>
+            <h3>GladAfrica Placement</h3>
+            <p>Gained hands-on industry experience with a one-month placement at GladAfrica, contributing to real-world projects.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">June 2019</div>
+            <h3>PLP Africa Placement</h3>
+            <p>Completed a one-month work placement at PLP Africa, further expanding my practical skills in the field.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">March 2019</div>
+            <h3>University of Pretoria</h3>
+            <p>Commenced my studies at the University of Pretoria, building a strong foundation in higher education.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-date">December 2018</div>
+            <h3>Grade 12 Completion</h3>
+            <p>Celebrated the completion of Grade 12, ready to tackle the next stage of my academic and professional journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Mulamuleli Mammba</h3>
+        <p>Java Developer passionate about creating impactful software solutions</p>
+      </div>
+      
+      <div class="footer-social">
+        <a href="https://github.com/MulamuMammba" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
         </a>
       </div>
     </div>
-  </section>
-
-  <section id="hook" class="hook">
-    <div class="hook-container">
-      <div class="column-left">
-        <div class="wrapper">
-
-          <img src="images/thohoyandou.svg" alt="illustration" class="hook-image2" />
-        </div>
-
-      </div>
-      <div class="column-right backglow">
-        <h2>From Ha-Makhuvha to Success: My Journey
-          <p>Growing up in Ha-Makhuvha, Limpopo, was a unique experience shaped by the beauty of rural life and the
-            strength of community. I attended Tshivhase Secondary School, where I cultivated my passion for learning and
-            ultimately matriculated. This foundation paved the way for my journey to Rosebank College, where I earned my
-            IIE diploma. Each step of this journey has been instrumental in shaping who I am today.</p>
-      </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
     </div>
-  </section>
-  <section id="hook" class="hook">
-    <div class="hook-container">
-      <div class="column-left backglow">
-        <div class="wrapper">
-          <h2 style="text-align: start; padding-top: 20px;">Pursuing My Passion for Software Development
-            <p style="text-align: start;">My love for software development and technology keeps me motivated on my
-              journey to becoming a tech lead one day. The challenges and innovations in this field inspire my
-              creativity and drive me to push the boundaries of what’s possible in tech.</p>
-          </h2>
-        </div>
+  </footer>
 
-      </div>
-      <div class="column-right">
-        <img src="images/laptop.svg" alt="illustration" class="hook-image" />
-      </div>
-    </div>
-  </section>
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
-  <!-- Timeline -->
-  <div class="timeline-area">
-    <div class="container">
-      <div class="timelines">
-        <h2>Timelines</h2>
-      </div>
-      <div class="all-timelines">
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>Septemper 2024</h6> — Embarked on a transformative journey with CAPACITI Technical Training Academy in
-              collaboration with FNB, sharpening my technical skills and expanding my career horizons.B
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>May 2024 </h6> — Proudly graduated from Rosebank College with a Diploma in Information Technology
-              (Software Development), marking a pivotal step toward a career in tech.
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>March 2021</h6> — Began an exciting academic adventure at Rosebank College, diving deep into the world
-              of software development and technological innovation.
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
+  <script>
+    // Navigation functionality
+    function toggleMenu() {
+      const navList = document.querySelector('.nav-list');
+      const menuBtn = document.querySelector('.menu-btn');
+      navList.classList.toggle('active');
+      menuBtn.classList.toggle('active');
+    }
 
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>December 2019</h6> — Gained hands-on industry experience with a one-month placement at GladAfrica,
-              contributing to real-world projects
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>June 2019</h6> — Completed a one-month work placement at PLP Africa, further expanding my practical
-              skills in the field.
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>March 2019</h6> — Commenced my studies at the University of Pretoria, building a strong foundation in
-              higher education.
-              <div class="t-square"></div>
-          </div>
-        </div>
-        <!--SINGLE TIMELINE-->
-        <div class="single-timeline d-flex-2">
-          <div class="timeline-blank"></div>
-          <div class="timeline-text d-flex-2">
-            <span>
-              <h6>December 2018</h6> Celebrated the completion of Grade 12, ready to tackle the next stage of my
-              academic and professional journey.
-            </span>
-            <div class="t-square"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-list a').forEach(link => {
+      link.addEventListener('click', () => {
+        const navList = document.querySelector('.nav-list');
+        const menuBtn = document.querySelector('.menu-btn');
+        navList.classList.remove('active');
+        menuBtn.classList.remove('active');
+      });
+    });
 
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
 
+    // Back to top functionality
+    window.onscroll = function() {
+      const backToTopBtn = document.getElementById("backToTop");
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        backToTopBtn.style.display = "block";
+      } else {
+        backToTopBtn.style.display = "none";
+      }
+    };
 
-    <footer id="footer" class="footer">
-      <div class="footer-content">
-        <ul class="socials">
-          <li><a href="https://github.com/MulamuMammba" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank"><i
-                class="fab fa-linkedin"></i> LinkedIn</a></li>
-          <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-          <li><a href="https://mulamumammba.github.io/Portfolio/" target="_blank"><i class="fas fa-globe"></i>
-              Website</a></li>
-        </ul>
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
 
-      </div>
-      <div class="footer-bottom" style="background-color: #009fb700;">
-        <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
-      </div>
-    </footer>
 </body>
-
-<!--Start of Tawk.to Script-->
 
 </html>

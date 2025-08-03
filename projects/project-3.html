@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Project</title>
+    <title>Disaster Management Platform - Web Application</title>
     <link rel="icon" type="images/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/minimal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
@@ -23,117 +25,248 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
-    <!--End of Tawk.to Script-->
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html" style="color: white;">
-            <div class="logo">Mulamuleli Mammba</div>
-        </a>
-
-        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+    <nav id="navbar">
+        <a href="../index.html" class="logo">Mulamuleli Mammba</a>
         <div class="nav-list">
-            <a class="button outline" href="../index.html">Home</a>
-            <a class="button outline" href="../about-me.html">About Me</a>
-            <a class="button outline" href="../index.html#projects">Projects</a>
-            <a class="button outline" href="../index.html#footer">Contact</a>
+            <a href="../index.html">Home</a>
+            <a href="../about-me.html">About Me</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
         </div>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-list').classList.toggle('active');
-        }
-    </script>
 
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-left backglow name-holder">
-                <div class="wrapper">
-                    <h1 style="  text-shadow: 0 0 5px rgba(255, 255, 255, 0.562), 0 0 10px rgba(127, 224, 165, 0.37);">
-                        <i class="fa-solid fa-land-mine-on"></i> Disaster Management Platform
-                    </h1>
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="project-hero-container">
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-badge">Web Application</div>
+                    <h1>Disaster Management Platform</h1>
+                    <p class="project-subtitle">A comprehensive web-based platform that enables users to report disasters, make donations, and transparently track fund allocation for enhanced community resilience.</p>
+                    <div class="project-hero-actions">
+                        <a href="https://github.com/MulamuMammba/Disaster-Management" target="_blank" class="project-hero-btn primary">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                        <a href="../index.html#projects" class="project-hero-btn secondary">
+                            <i class="fas fa-arrow-left"></i> Back to Projects
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="column-left backglow">
-                <h2><i class="fa-solid fa-circle-exclamation"></i> Description
-                    <p>A web-based disaster management platform that enables users to report disasters, make donations,
-                        and transparently track the allocation of funds. The platform aims to enhance community
-                        resilience and accountability in disaster response.</p>
+                <div class="project-hero-image">
+                    <img src="../images/website.svg" alt="Disaster Management Platform" />
+                </div>
             </div>
         </div>
     </section>
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-left backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;"><i class="fa-solid fa-pen"></i> Features
-                        <p style="text-align: start;">🚨 Disaster Reporting: Users can quickly report disasters in their
-                            area, providing real-time data to aid response efforts.
-                            <br> 💸 Transparent Donation Tracking: Donors can see how their contributions are being
-                            used, fostering trust and encouraging further support.
-                            <br>🏦 Fund Allocation System: Efficiently manage and allocate funds based on the needs
-                            arising from reported disasters.
-                            <br>🔍 Public Transparency for All Transactions: All transactions are visible to the public,
-                            ensuring accountability and building community trust.
-                        </p>
-                    </h2>
+
+    <!-- Problem Statement Section -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-text">
+                    <h2>Problem Statement</h2>
+                    <p>Communities often lack efficient systems for disaster reporting and transparent fund management during crisis situations. Existing solutions may not provide comprehensive tracking or foster trust among donors and beneficiaries.</p>
+                    <p>There's a need for a platform that combines disaster reporting, donation management, and transparent fund allocation to enhance community resilience and accountability.</p>
+                </div>
+                <div class="project-image">
+                    <img src="../images/laptop.svg" alt="Problem Illustration" />
                 </div>
             </div>
-            <div class="column-right backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;"><i class="fa-solid fa-code"></i> Technologies
-                        <p style="text-align: start;">
-
-                            <br>
-                            <br><i class="devicon-firebase-plain-wordmark colored"></i>
-                            C#: Programming language used for backend development.
-                            <br><i class="devicon-androidstudio-plain colored"></i>
-                            ASP .Net: Framework for building the web application and managing server-side logic.
-                            <br><i class="devicon-kotlin-plain colored"></i> Azure DevOps: Tools for project management,
-                            continuous integration, and deployment, ensuring a smooth development process.
-                            <br>
-                            " "
-                        </p>
-
-                    </h2>
-                </div>
-            </div>
-    </section>
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-right backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;">Link
-                        <p style="text-align: start;">
-                            <a href="https://github.com/MulamuMammba/Disaster-Management" class="know-more">
-                                <button class="glass-button" role="button">View On Github</button>
-                            </a>
-                        </p>
-
-                    </h2>
-                </div>
-            </div>
+        </div>
     </section>
 
+    <!-- Solution Section -->
+    <section class="project-section alt-bg">
+        <div class="project-container">
+            <div class="project-content reverse">
+                <div class="project-text">
+                    <h2>Our Solution</h2>
+                    <p>A web-based disaster management platform that enables users to report disasters, make donations, and transparently track the allocation of funds. The platform aims to enhance community resilience and accountability in disaster response.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Disaster Reporting</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <span>Donation Tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-pie"></i>
+                            <span>Fund Allocation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Public Transparency</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="../images/Collection.svg" alt="Solution Illustration" />
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Technologies Section -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="section-header">
+                <h2>Technologies Used</h2>
+                <p>Built with modern web development technologies and cloud services</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="devicon-csharp-plain colored"></i>
+                    <h3>C#</h3>
+                    <p>Programming language used for backend development and business logic</p>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-dotnetcore-plain colored"></i>
+                    <h3>ASP.NET</h3>
+                    <p>Framework for building the web application and managing server-side logic</p>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-azure-plain colored"></i>
+                    <h3>Azure DevOps</h3>
+                    <p>Tools for project management, continuous integration, and deployment</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL Server</h3>
+                    <p>Database management system for storing and managing application data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="project-section alt-bg">
+        <div class="project-container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Comprehensive disaster management capabilities</p>
+            </div>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Disaster Reporting</h3>
+                    <p>Users can quickly report disasters in their area, providing real-time data to aid response efforts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Transparent Donation Tracking</h3>
+                    <p>Donors can see how their contributions are being used, fostering trust and encouraging further support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>Fund Allocation System</h3>
+                    <p>Efficiently manage and allocate funds based on the needs arising from reported disasters.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Public Transparency</h3>
+                    <p>All transactions are visible to the public, ensuring accountability and building community trust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://github.com/MulamuMammba" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://mulamumammba.github.io/Portfolio/" target="_blank"><i class="fas fa-globe"></i>
-                        Website</a></li>
-            </ul>
-
+            <div class="footer-info">
+                <h3>Mulamuleli Mammba</h3>
+                <p>Java Developer passionate about creating impactful software solutions</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://github.com/MulamuMammba" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-bottom" style="background-color: #009fb700;">
+        
+        <div class="footer-bottom">
             <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Navigation functionality
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const menuBtn = document.querySelector('.menu-btn');
+            navList.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navList = document.querySelector('.nav-list');
+                const menuBtn = document.querySelector('.menu-btn');
+                navList.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Back to top functionality
+        window.onscroll = function() {
+            const backToTopBtn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
 

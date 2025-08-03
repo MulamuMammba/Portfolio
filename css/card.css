@@ -100,3 +100,50 @@
   transform: scale(0.9);
   opacity: 0.8;
 }
+
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-btn.primary {
+  background: linear-gradient(135deg, var(--md-sys-color-primary), var(--md-sys-color-secondary));
+  color: var(--md-sys-color-on-primary);
+  box-shadow: 0 2px 8px rgba(160, 212, 155, 0.3);
+}
+
+.project-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(160, 212, 155, 0.4);
+}
+
+.project-btn.secondary {
+  background: transparent;
+  color: var(--md-sys-color-on-background);
+  border: 2px solid var(--md-sys-color-primary);
+}
+
+.project-btn.secondary:hover {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+  transform: translateY(-2px);
+}
+
+.project-link {
+  text-decoration: none;
+}

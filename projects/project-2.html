@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Project</title>
+    <title>Eagle-Eyed - Bird Watching Companion App</title>
     <link rel="icon" type="images/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../css/colors.css">
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/minimal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
 
@@ -23,130 +25,252 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
     </script>
-    <!--End of Tawk.to Script-->
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html" style="color: white;">
-            <div class="logo">Mulamuleli Mammba</div>
-        </a>
-
-        <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+    <nav id="navbar">
+        <a href="../index.html" class="logo">Mulamuleli Mammba</a>
         <div class="nav-list">
-            <a class="button outline" href="../index.html">Home</a>
-            <a class="button outline" href="../about-me.html">About Me</a>
-            <a class="button outline" href="../index.html#projects">Projects</a>
-            <a class="button outline" href="../index.html#footer">Contact</a>
+            <a href="../index.html">Home</a>
+            <a href="../about-me.html">About Me</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html#contact">Contact</a>
         </div>
+        <button class="menu-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-list').classList.toggle('active');
-        }
-    </script>
 
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-left backglow name-holder">
-                <div class="wrapper">
-                    <h1 style="  text-shadow: 0 0 5px rgba(255, 255, 255, 0.562), 0 0 10px rgba(127, 224, 165, 0.37);">
-                        Eagle-Eyed: Bird-Watching Companion App</h1>
+    <!-- Project Hero Section -->
+    <section class="project-hero">
+        <div class="project-hero-container">
+            <div class="project-hero-content">
+                <div class="project-hero-text">
+                    <div class="project-badge">Android App</div>
+                    <h1>Eagle-Eyed</h1>
+                    <p class="project-subtitle">A comprehensive bird-watching companion app that helps enthusiasts identify, track, and document bird species with ease.</p>
+                    <div class="project-hero-actions">
+                        <a href="https://github.com/MulamuMammba/Eagle-Eyed" target="_blank" class="project-hero-btn primary">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                        <a href="../index.html#projects" class="project-hero-btn secondary">
+                            <i class="fas fa-arrow-left"></i> Back to Projects
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="column-left backglow">
-                <h2><i class="fa-solid fa-circle-exclamation"></i> Problem Statement
-                    <p>Bird-watching enthusiasts often struggle to identify and document the species they encounter.
-                        Existing tools may not provide comprehensive information or tracking features, leading to missed
-                        opportunities for learning and engagement.</p>
+                <div class="project-hero-image">
+                    <img src="../images/nature.svg" alt="Eagle-Eyed App" />
+                </div>
             </div>
         </div>
     </section>
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-left backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;"><i class="fa-solid fa-pen"></i> Approach
-                        <p style="text-align: start;">Eagle-Eyed offers a streamlined solution for bird watchers by
-                            integrating bird identification, location tracking, and personal statistics within an
-                            intuitive app. The goal is to enhance the bird-watching experience and foster a deeper
-                            connection with nature.</p>
-                    </h2>
-                </div>
-            </div>
-            <div class="column-right backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;"><i class="fa-solid fa-code"></i> Technologies
-                        <p style="text-align: start;">Eagle-Eyed leverages Firebase for user authentication and backend
-                            services, along with SQLite for local data storage. The app is developed using Kotlin to
-                            ensure a seamless user experience and fast performance.
 
-                            <br>
-                            <br><i class="devicon-firebase-plain-wordmark colored"></i>
-                            Firebase: Secure backend services and user authentication
-                            <br><i class="devicon-androidstudio-plain colored"></i>
-                            Android Studio: IDE for Android app development
-                            <br><i class="devicon-kotlin-plain colored"></i> Kotlin: Programming languages used for app
-                            development
-                            <br><i class="devicon-apache-line"></i> eBird API: For accessing bird species information
-                            <br>
-                            " "
-                        </p>
-
-                    </h2>
+    <!-- Problem Statement Section -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-content">
+                <div class="project-text">
+                    <h2>Problem Statement</h2>
+                    <p>Bird-watching enthusiasts often struggle to identify and document the species they encounter. Existing tools may not provide comprehensive information or tracking features, leading to missed opportunities for learning and engagement.</p>
+                    <p>Bird watchers need a streamlined solution that combines identification tools, location tracking, and personal statistics within an intuitive app experience.</p>
+                </div>
+                <div class="project-image">
+                    <img src="../images/laptop.svg" alt="Problem Illustration" />
                 </div>
             </div>
-    </section>
-    <section id="hook" class="hook">
-        <div class="hook-container">
-            <div class="column-left backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;">Contributers
-                        <p style="text-align: start;">The development of ArchiveCol was led by Mulamuleli Mammba, with
-                            contributions from a team of passionate developers, designers, and testers committed to
-                            creating an exceptional collecting experience.
-                            <br>
-                            <br><i class="devicon-clion-plain colored"></i> Team lead/ Lead Developer : Mulamuleli
-                            Mammba
-                            <br><i class="devicon-figma-plain colored"></i> UI/UX Designer : Valerie Hlulani Tshuma
-                            <br><i class="devicon-javascript-plain colored"></i> Web Developer : Tinashe Danmore
-                            <br><i class="devicon-git-plain"></i> Analyst : Amos Paul Mulele
-                        </p>
-                    </h2>
-                </div>
-            </div>
-            <div class="column-right backglow">
-                <div class="wrapper">
-                    <h2 style="text-align: start; padding-top: 20px;">Link
-                        <p style="text-align: start;">
-                            <a href="https://github.com/MulamuMammba/Eagle-Eyed" class="know-more">
-                                <button class="glass-button" role="button">View On Github</button>
-                            </a>
-                        </p>
-
-                    </h2>
-                </div>
-            </div>
+        </div>
     </section>
 
+    <!-- Solution Section -->
+    <section class="project-section alt-bg">
+        <div class="project-container">
+            <div class="project-content reverse">
+                <div class="project-text">
+                    <h2>Our Solution</h2>
+                    <p>Eagle-Eyed offers a streamlined solution for bird watchers by integrating bird identification, location tracking, and personal statistics within an intuitive app. The goal is to enhance the bird-watching experience and foster a deeper connection with nature.</p>
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <span>Bird Identification</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location Tracking</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-book"></i>
+                            <span>Species Catalog</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>Personal Statistics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="../images/website.svg" alt="Solution Illustration" />
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Technologies Section -->
+    <section class="project-section">
+        <div class="project-container">
+            <div class="section-header">
+                <h2>Technologies Used</h2>
+                <p>Built with modern Android development tools and external APIs</p>
+            </div>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="devicon-kotlin-plain colored"></i>
+                    <h3>Kotlin</h3>
+                    <p>Modern programming language used for Android app development</p>
+                </div>
+                <div class="tech-card">
+                    <i class="devicon-firebase-plain-wordmark colored"></i>
+                    <h3>Firebase</h3>
+                    <p>Secure backend services and user authentication</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQLite</h3>
+                    <p>Local database for offline access and improved performance</p>
+                </div>
+                <div class="tech-card">
+                    <i class="fas fa-cloud"></i>
+                    <h3>eBird API</h3>
+                    <p>External API for accessing comprehensive bird species information</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="project-section alt-bg">
+        <div class="project-container">
+            <div class="section-header">
+                <h2>Development Team</h2>
+                <p>Meet the passionate team behind Eagle-Eyed</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Mulamuleli Mammba</h3>
+                    <p class="team-role">Team Lead / Lead Developer</p>
+                    <p>Led the development process and implemented core functionality</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Valerie Hlulani Tshuma</h3>
+                    <p class="team-role">UI/UX Designer</p>
+                    <p>Created intuitive and beautiful user interfaces</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Tinashe Danmore</h3>
+                    <p class="team-role">Web Developer</p>
+                    <p>Contributed to web-based components and integrations</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Amos Paul Mulele</h3>
+                    <p class="team-role">Analyst</p>
+                    <p>Provided valuable insights and requirements analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer id="footer" class="footer">
         <div class="footer-content">
-            <ul class="socials">
-                <li><a href="https://github.com/MulamuMammba" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://mulamumammba.github.io/Portfolio/" target="_blank"><i class="fas fa-globe"></i>
-                        Website</a></li>
-            </ul>
-
+            <div class="footer-info">
+                <h3>Mulamuleli Mammba</h3>
+                <p>Java Developer passionate about creating impactful software solutions</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://github.com/MulamuMammba" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mulamuleli-mammba-4498b0268" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
         </div>
-        <div class="footer-bottom" style="background-color: #009fb700;">
+        
+        <div class="footer-bottom">
             <p>&copy; 2024 Mulamuleli Mammba. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // Navigation functionality
+        function toggleMenu() {
+            const navList = document.querySelector('.nav-list');
+            const menuBtn = document.querySelector('.menu-btn');
+            navList.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navList = document.querySelector('.nav-list');
+                const menuBtn = document.querySelector('.menu-btn');
+                navList.classList.remove('active');
+                menuBtn.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Back to top functionality
+        window.onscroll = function() {
+            const backToTopBtn = document.getElementById("backToTop");
+            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
 
 </body>
 
